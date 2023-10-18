@@ -725,3 +725,8 @@ img {
 .modal-submit-button:focus {
   background-color: #404bbf;
 }
+.open-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
