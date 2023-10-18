@@ -516,7 +516,7 @@ img {
   color: #ffffff;
   font-size: 16px;
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   font-weight: 500;
   min-width: 165px;
   height: 40px;
@@ -588,14 +588,14 @@ img {
   fill: #ffffff;
 }
 .modal-title {
-  text-align: center;
-
-  font-family: Roboto;
+  color: #2e2f42;
   font-size: 16px;
+
   font-weight: 500;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 .modal-input {
   width: 360px;
@@ -702,6 +702,12 @@ img {
 .modal-form-item-checkbox {
   margin-bottom: 24px;
 }
+
+.open-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .modal-submit-button {
   display: block;
   min-width: 169px;
@@ -724,9 +730,4 @@ img {
 .modal-submit-button:hover,
 .modal-submit-button:focus {
   background-color: #404bbf;
-}
-.open-backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
