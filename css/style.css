@@ -407,6 +407,9 @@ img {
 .footer-logo-container {
   margin-right: 120px;
 }
+.footer-social-container {
+  margin-right: 80px;
+}
 .footer-logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -470,6 +473,62 @@ img {
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.footer-form-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto;
+  margin-bottom: 16px;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: inherit;
+  padding: 8px 0 8px 16px;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.15));
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.footer-button {
+  background-color: #4d5ae5;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  min-width: 165px;
+  height: 40px;
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #404bbf;
+}
+.footer-button-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
 .backdrop {
   position: fixed;
   width: 100%;
@@ -477,6 +536,11 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 408px;
@@ -511,13 +575,14 @@ img {
 }
 .modal-button:hover {
 }
-.modal-button:focus {
-  border: none;
-  background-color: #404bbf;
-}
+
 .modal-button-close {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:focus {
+  border: none;
+  background-color: #404bbf;
 }
 .modal-button:hover .modal-button-close,
 .modal-button:focus .modal-button-close {
